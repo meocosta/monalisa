@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$amarelo: #FFBC42;
+$rosaClaro: #D81159;
+$rosaEscuro: #8F2D56;
+$azul: #218380;
+$azulClaro: #73D2DE;
+
+
+@mixin quicksand ($weight) {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }

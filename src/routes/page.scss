@@ -1,0 +1,74 @@
+@import "./layout.scss";
+
+#intro {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+
+    h2 {
+        color: $azulClaro;
+        cursor: default;
+        @include quicksand(500);
+        font-size: 2vw;
+    }
+
+    hr{
+        background-color: $amarelo;
+        width: 90vw;
+        height: 2px;
+        border: none;
+    }
+
+    h1 {
+        @include quicksand(700);
+        cursor: default;
+        color: $azul;
+        font-size: 7vw;
+
+        span {
+            cursor: pointer;
+            transition: all 1s;
+        }
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+    
+        a{
+           color: $rosaClaro;
+           @include quicksand(500);
+           font-size: 2vw;
+           cursor: pointer;
+           text-decoration: none; 
+        }
+    
+        a:hover{
+            color: $rosaEscuro;
+            text-shadow: 0px 0px 20px $rosaEscuro;
+        }
+    }
+}
+
+
+
+#conteudo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h3{
+        @include quicksand(200);
+        font-size: 2vw;
+    }
+
+    
+}
